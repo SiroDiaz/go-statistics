@@ -2,7 +2,7 @@ package statistics
 
 import "errors"
 
-// Compute the mean and throws an error instance
+// Compute the mean or average and throws an error instance
 // for empty slices.
 func Mean(list []float64) (float64, error) {
 	if len(list) == 0 {
