@@ -5,6 +5,8 @@ import(
 	"errors"
 )
 
+// Obtains the geometric mean of a given slice.
+// Returns an error if the list is empty.
 func GeometricMean(list []float64) (float64, error) {
 	if len(list) == 0 {
 		return 0.0, errors.New("Empty list")
