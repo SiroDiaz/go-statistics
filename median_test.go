@@ -17,4 +17,9 @@ func TestMedian(t *testing.T) {
 	if median != 2.5 {
 		t.Error("Median must be equal to 2.5")
 	}
+
+	median, err := Median([]float64{})
+	if err == nil {
+		t.Error("Empty list. Must return an error")
+	}
 }
