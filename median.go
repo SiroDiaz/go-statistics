@@ -7,7 +7,7 @@ import(
 
 func Median(list []float64) (float64, error) {
 	if len(list) == 0 {
-		return 0.0, errors.New("")
+		return 0.0, errors.New("Empty list given")
 	}
 
 	if !sort.Float64sAreSorted(list) {
